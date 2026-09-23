@@ -1,34 +1,26 @@
 {
-  "checked_at": "2026-09-23",
-  "scope": "pack structure and authored eval fixtures only",
+  "schema_version": 1,
+  "scope": "New visual skill files and index changes only; existing repository history is outside scope.",
   "checks": [
     {
-      "check": "visual-explain: frontmatter/name/description",
+      "check": "UTF-8 text only; no archive, images, hidden files, source review, or raw conversation export",
       "status": "passed"
     },
     {
-      "check": "visual-story: frontmatter/name/description",
+      "check": "Skill frontmatter, names, descriptions, local links, and 21 unique evaluation routes",
       "status": "passed"
     },
     {
-      "check": "visual-art-direction: frontmatter/name/description",
-      "status": "passed"
-    },
-    {
-      "check": "all local markdown link targets exist",
-      "status": "passed"
-    },
-    {
-      "check": "21 unique eval cases with required fields and valid skill route",
-      "status": "passed"
-    },
-    {
-      "check": "scan for specified account/project/family identifiers",
+      "check": "Full text review and targeted scans for identifying information, private paths, contact details, credentials, and source provenance",
       "status": "passed",
-      "note": "Targeted scan, not a universal privacy guarantee."
+      "note": "No identifying information found in the staged file contents. This is a scoped review, not a universal anonymity guarantee."
     },
     {
-      "check": "image rendering and multi-model regression",
+      "check": "Six specification-level walkthroughs with generalized fixtures, including cumulative counts 3, 5, 9",
+      "status": "passed"
+    },
+    {
+      "check": "Image rendering and multi-model regression",
       "status": "not_run"
     }
   ]

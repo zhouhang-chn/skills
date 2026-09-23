@@ -8,9 +8,9 @@
 
 | 需求 | Skill |
 |---|---|
-| 把系统、机制、差异、教学内容或证据讲清楚 | `visual-explain` |
-| 给文章/观点配图，或用一组图推进叙事 | `visual-story` |
-| 探索头像、封面、插画等视觉方向，或按参考重画 | `visual-art-direction` |
+| 把系统、机制、差异、教学内容或证据讲清楚 | [visual-explain](../visual-explain/SKILL.md) |
+| 给文章/观点配图，或用一组图推进叙事 | [visual-story](../visual-story/SKILL.md) |
+| 探索头像、封面、插画等视觉方向，或按参考重画 | [visual-art-direction](../visual-art-direction/SKILL.md) |
 
 `visual-explain` 按需读取结构、流程、对比/演进、教学、证据五种配方。
 “简化、重画、美化”属于所有技能共有的迭代行为，不另建重复 skill。
@@ -25,16 +25,16 @@
 
 ```text
 使用 visual-explain 把上面的方案画成结构图。
-两个客户端都读写两个仓库，客户端之间没有直连。
+应用 A 和应用 B 均访问资料库与成果库，应用之间不直接通信。
 ```
 
 ```text
-使用 visual-story 把这个观点做成四张连续的图，先生成第一张。
-每张增加一个理解层次，不要四次总结同一段话。
+使用 visual-story 把这个观点做成三张连续的图，先生成第一张。
+每张增加一个理解层次，不要反复总结同一段话。
 ```
 
 ```text
-使用 visual-art-direction 基于当前参考图探索五种真正不同的插画风格。
+使用 visual-art-direction 基于当前参考图探索三种真正不同的插画风格。
 保持主体与基本构图，只改变视觉语言。
 ```
 
@@ -53,7 +53,7 @@
 
 ## 评测
 见 [evals/README.md](../evals/visual-skills/README.md)、[验收用例](../evals/visual-skills/cases.json) 与 [规格走查](../evals/visual-skills/spec-replay.md)。
-用例是合成或去标识化的行为测试，不含个人账号、私人仓库路径、家庭信息或聊天记录导出。
+用例采用合成对象与改写情境，只保留待检验的行为约束；不附带原始对话、个人档案或源文件索引。
 本包做过文件结构、前置字段、引用路径和用例格式检查；没有据此声称跨模型测试或图像回归已通过。
 
 ## 范围
