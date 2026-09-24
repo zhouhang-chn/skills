@@ -75,16 +75,19 @@ Avoid generic AI/marketing language, ornamental symmetry, empty transitions, rep
 
 For complex topics, draft section by section and review whether each section advances the thesis with mechanism, evidence, or example.
 
-### 6. Compress
+### 6. Compress & minimize
 
-After the full draft exists, remove:
-- repeated mechanisms or conclusions
-- repeated disclaimers once the evidence boundary is clear
-- side branches that are interesting but unnecessary
-- sections that exist only for completeness
-- English labels that add no precision when natural Chinese is clearer
+Run two separate passes after the full draft exists.
 
-Prefer one strong concrete example over several abstract explanations.
+**Compression pass:** remove repeated mechanisms or conclusions, repeated disclaimers, empty transitions, unnecessary wording, and English labels that add no precision when natural Chinese is clearer.
+
+**Minimization pass:** test every section, example, diagram, analogy, and side branch for necessity. Ask:
+
+`If this is removed, does the thesis become weaker, less clear, less credible, or harder to verify?`
+
+If not, remove it.
+
+Optimize for sufficient-and-necessary structure, not minimum length. Prefer one strong concrete example over several abstract explanations, and keep a visual only when it adds understanding that the prose does not already provide.
 
 ### 7. End one level up
 
@@ -123,7 +126,8 @@ An article is ready only if:
 - every visual has a distinct explanatory job
 - unsupported or overly strong claims are removed
 - research stopped once sufficient
-- a compression pass removed repetition and side branches
+- compression removed repetition and wording overhead
+- minimization removed non-essential sections, examples, analogies, and visuals
 - the ending adds a higher-order implication
 - title, description, cover, visuals, and insertion points are ready for X
 
