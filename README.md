@@ -1,6 +1,6 @@
 # Skills
 
-Reusable skills for Codex.
+Reusable skills for AI agents and coding assistants, independent of any single platform.
 
 - [html-dashboard](html-dashboard/SKILL.md): Generate self-contained, interactive offline HTML dashboards with traceable evidence.
 - [minimize-change](minimize-change/SKILL.md): Review completed changes for sufficiency and necessity before commit.
