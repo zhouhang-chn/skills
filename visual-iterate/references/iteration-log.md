@@ -1,42 +1,33 @@
-# Iteration Log — 简化记录模板
+# Visual Iterate — Iteration Log
 
-仅当用户需要迭代记录、复盘或多轮自动执行时才外显；普通单轮生成无需附长表格。
+多轮任务使用；记录**真实看图后的判断**，不预写未来版本。完整标准见 [八维三级量表](critique-rubric.md)。
 
 ```markdown
-# Visual Iteration: <作品名称>
-Intent: <目标受众 + 要完成的事情>
-Artifact: <类型/媒介/阅读尺寸>
-Invariants: <不得改变的内容与视觉决定>
-Evidence: <给定资料、可观察事实与待验证假设>
+Intent: <受众 + 一句话主张>
+Artifact / target size: <媒介、语言、阅读尺寸>
+Invariants / evidence: <不可改内容、事实来源、未知项>
+Budget: <N 版图还是 N 次修改；实际完成数>
 
 ## V<n>
-Source: <真实文件/当前可访问图片；无则注明>
-Critique: <八个维度分别 Strong/Fair/Weak，必要时说明 N/A>
-Top issues:
-- [dimension] Observation: ... | Reason: ...
-- [dimension] Observation: ... | Reason: ...
-Change plan: <本轮优先修复的 1–3 个问题与冻结项>
-Artifact: <真实交付位置>
-Re-evaluation:
-- Improved: <证据>
-- Regressed: <证据，或未观察到明显回退>
-- Unchanged: <证据>
-- Unproven: <需用户测试/外部数据/无法目视判断的项>
-Next action: <停止 / 继续 + 原因>
+Artifact: <真实可访问的本版图像>
+Correctness gate: <Pass / Fail + 事实、文字、数字、箭头与可读性证据>
+
+| Dimension | Strong/Fair/Weak/N/A | 本版可观察证据 + 判断理由 |
+|---|---|---|
+| Function | ... | ... |
+| Audience | ... | ... |
+| Hierarchy | ... | ... |
+| Composition | ... | ... |
+| Visual Contrast | ... | ... |
+| Additional Contrasts | ... | ... |
+| Meaning | ... | ... |
+| Narrative / Sequence | ... | ... |
+
+Negative feedback (最多 3 条):
+- <维度：可观察缺陷 → 对 Intent 的影响 → 本轮明确修改动作>
+Frozen: <保留哪些正确内容/元素>
+Comparison with V<n-1>: <Improved / Regressed / Unchanged / Unproven；各有证据；V1 写 N/A>
+Next: <继续 / 修复回退 / 停止 + 原因>
 ```
 
-## 评分表（可选）
-
-| Dimension | Before | After | Evidence (visual observation) | Status |
-|---|---|---|---|---|
-| Function | Fair | Strong | 目标动作从模糊描述改为明确 CTA | 设计判断，用户理解仍待测 |
-| Hierarchy | Fair | Strong | CTA 从低对比、远离标题，变为紧随主标题的高对比按钮 | 可观察的视觉改进 |
-| Audience | Fair | Fair | 未提供受众访谈，视觉变化不足以支持升级 | 保持评分 |
-
-表格是**示例格式**，不能复制为未经评审的事实；实际分数由实际图片证据决定。
-
-## 回归门槛
-
-- 若本轮新增信息让字号不可读、图像关系被改错、遗漏核心事实、删掉已确认要求，则优先修复回退；不要因为某项变 Strong 就忽略硬约束失败。
-- 多次新增小卡片/长解释导致拥挤时，优先删除、重新组织或拆分，而不是继续缩小字体。
-- 同一生成者自评出现“一切都变好”时，检查反证，并保留不变和未验证项目。
+**门槛**：若没有实际图像或无法检查，标明限制，不填虚构评价。硬性事实/语义回退先修复；不可用“总体更好”抵消。受众效果及质量提升若未经实验，只能作设计判断，不得伪装成实测分数。最终版本也必须填完八维复评。
