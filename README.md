@@ -11,5 +11,6 @@ Reusable skills for AI agents and coding assistants, independent of any single p
 - [visual-explain](visual-explain/SKILL.md): Create accurate explanatory visuals for structures, processes, comparisons, teaching, and evidence.
 - [visual-story](visual-story/SKILL.md): Turn article sections, ideas, or talks into coherent single-image or multi-image visual narratives.
 - [visual-art-direction](visual-art-direction/SKILL.md): Explore and refine visual styles for avatars, covers, illustrations, and reference-based edits.
+- [visual-iterate](visual-iterate/SKILL.md): Improve static visuals through evidence-based critique, targeted revisions, and before/after re-evaluation.
 
 See the [Visual Skills guide](docs/visual-skills.md) for routing and usage, and [evaluation cases](evals/visual-skills/README.md) for behavioral acceptance checks.

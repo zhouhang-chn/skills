@@ -2,7 +2,7 @@
 
 把讨论转为图：先确认要表达的关系和主张，再组织视觉。
 
-本包包含 **3 个 skills、5 个按需加载配方和一组验收用例**。不是某种配色、模型或绘图工具的固定模板。
+本包包含 **4 个 skills、5 个按需加载配方和一组现有验收用例**。不是某种配色、模型或绘图工具的固定模板。
 
 ## 选择哪个 skill
 
@@ -11,14 +11,15 @@
 | 把系统、机制、差异、教学内容或证据讲清楚 | [visual-explain](../visual-explain/SKILL.md) |
 | 给文章/观点配图，或用一组图推进叙事 | [visual-story](../visual-story/SKILL.md) |
 | 探索头像、封面、插画等视觉方向，或按参考重画 | [visual-art-direction](../visual-art-direction/SKILL.md) |
+| 对已有或新生成的静态视觉作品按证据反复评审、定向修改、前后复评 | [visual-iterate](../visual-iterate/SKILL.md) |
 
 `visual-explain` 按需读取结构、流程、对比/演进、教学、证据五种配方。
-“简化、重画、美化”属于所有技能共有的迭代行为，不另建重复 skill。
+常规局部改图由原 Skill 处理；需要多轮 Critique、评级校准、证据追溯和回归检查时使用 `visual-iterate`。
 
 ## 安装与使用
-把三个命名目录复制到目标宿主支持的 skills 目录，保留目录内的 `SKILL.md` 和 `references/`。
+把需要使用的命名目录复制到目标宿主支持的 skills 目录，保留目录内的 `SKILL.md` 和 `references/`。
 具体发现/启用方式由宿主决定；此包不自动安装、连接账户或取得图像工具权限。
-三个目录均包含独立的主指令。`visual-story` 可复用 `visual-explain`；缺少后者时，仍有最小正确性约束。
+四个目录均包含独立的主指令。`visual-story` 可复用 `visual-explain`；缺少后者时，仍有最小正确性约束。
 无需把评测目录放进宿主的自动加载目录；评测可留在仓库中单独运行。
 
 示例请求：
@@ -38,6 +39,12 @@
 保持主体与基本构图，只改变视觉语言。
 ```
 
+示例：
+
+```text
+使用 visual-iterate 对刚生成的教学图按八维 Critique Framework 评分，选出最重要的两处问题修改成 V2，然后复评并检查有没有回退。
+```
+
 ## 工作方式
 
 `问题与用途 → 语义/内容规格 → 视觉结构 → 实际渲染 → 验收 → 按反馈定向修改`
@@ -54,7 +61,7 @@
 ## 评测
 见 [evals/README.md](../evals/visual-skills/README.md)、[验收用例](../evals/visual-skills/cases.json) 与 [规格走查](../evals/visual-skills/spec-replay.md)。
 用例采用合成对象与改写情境，只保留待检验的行为约束；不附带原始对话、个人档案或源文件索引。
-本包做过文件结构、前置字段、引用路径和用例格式检查；没有据此声称跨模型测试或图像回归已通过。
+现有验收用例面向原有视觉 Skills；新增 visual-iterate 尚未完成跨模型自动化评测或图像回归测试。
 
 ## 范围
 本包关注作图行为，不附带生图服务、可编辑图形引擎或自动发布。
