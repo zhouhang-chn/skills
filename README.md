@@ -6,6 +6,7 @@ Reusable skills for AI agents and coding assistants, independent of any single p
 - [minimize-change](minimize-change/SKILL.md): Review completed changes for sufficiency and necessity before commit.
 - [skill-minimizer](skill-minimizer/SKILL.md): Minimize a skill while preserving its intended behavior.
 - [meta-research](meta-research/SKILL.md): Graph-guided research for broader source coverage through lexical, semantic, relational, and temporal expansion.
+- [repo-study](repo-study/SKILL.md): Trace repository implementation, dependencies, Git evolution, author rationale, third-party evidence, and reusable lessons.
 - [x-post](x-post/SKILL.md): Write or rewrite concise technical X posts in a human, thinking-in-public style.
 - [x-article](x-article/SKILL.md): Turn existing work and research into evidence-backed, visually structured long-form X Articles.
 - [visual-explain](visual-explain/SKILL.md): Create accurate explanatory visuals for structures, processes, comparisons, teaching, and evidence.
