@@ -3,6 +3,7 @@
 Reusable skills for AI agents and coding assistants, independent of any single platform.
 
 - [html-dashboard](html-dashboard/SKILL.md): Generate self-contained, interactive offline HTML dashboards with traceable evidence.
+- [change-request](change-request/SKILL.md): Draft self-contained, evidence-grounded change proposals with explicit boundaries and acceptance criteria.
 - [minimize-change](minimize-change/SKILL.md): Review completed changes for sufficiency and necessity before commit.
 - [skill-minimizer](skill-minimizer/SKILL.md): Minimize a skill while preserving its intended behavior.
 - [meta-research](meta-research/SKILL.md): Graph-guided research for broader source coverage through lexical, semantic, relational, and temporal expansion.
