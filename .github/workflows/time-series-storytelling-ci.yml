@@ -23,12 +23,14 @@ jobs:
         run: python -m pip install -e './time-series-storytelling[test]'
       - name: Unit and regression tests
         run: python -m pytest -q time-series-storytelling/tests
+      - name: Install FFmpeg
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg
       - name: End-to-end render smoke test
         run: |
           ffmpeg -version | head -1
           python -m ts_story run time-series-storytelling/examples/step_up.csv \
             --metric 'Active accounts' --unit accounts \
             --source 'Synthetic fixture' \
-            --outdir /tmp/ts-story-smoke --size 320x180 --fps 8
+            --outdir /tmp/ts-story-smoke --size 480x320 --fps 12
           test -s /tmp/ts-story-smoke/story.json
           test -s /tmp/ts-story-smoke/film.mp4
