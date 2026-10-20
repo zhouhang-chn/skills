@@ -1,0 +1,18 @@
+# Generated movies and narrative specs
+output/
+*.mp4
+*.wav
+*.aac
+
+# Python build products
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+build/
+dist/
+
+# OS and editor
+.DS_Store
